@@ -34,14 +34,14 @@ The Random Forest feature importances plot illustrates the significance of each 
 
 ### Reassessing the Models: A Closer Look at Random Forest and SHAP Analysis
 
-In our journey to predict supermarket sales, we've employed various models and techniques. One of the pivotal models used was the [Random Forest model](https://github.com/coryncates/Prediction-of-Product-Sales/blob/main/Reg.png?raw=true). Its initial interpretations provided essential insights into feature importances and helped shape our understanding of the model’s decision-making process.
+In our journey to predict supermarket sales, we've employed various models and techniques. One of the pivotal models used was the ![Random Forest model](https://github.com/coryncates/Prediction-of-Product-Sales/blob/main/Reg.png?raw=true). Its initial interpretations provided essential insights into feature importances and helped shape our understanding of the model’s decision-making process.
 
 To deepen our insights, we also employed SHAP (SHapley Additive exPlanations) to interpret the model. SHAP values provide a unified measure of feature importance and allow a more detailed understanding of feature interactions and impacts.
 
 #### **Comparison between Random Forest and SHAP Feature Importances:**
 The Random Forest model provided us with a primary understanding of feature importances based on the mean decrease in impurity, revealing ‘Item_MRP’ as a highly influential feature. However, SHAP values, through their intricate calculations considering all possible feature value combinations, offered a more nuanced view.
 
-SHAP unveiled not just the magnitude but also the direction of the influence of the features. While the [bar plot summary](https://github.com/coryncates/Project-Revisited/blob/main/bar.png?raw=true) highlighted the impactful features, the [dot plot summary](https://github.com/coryncates/Project-Revisited/blob/main/bar.png?raw=true) allowed us to visualize the intricate details of each feature's influence on individual predictions, with each dot representing a Shapley value for a feature and an instance.
+SHAP unveiled not just the magnitude but also the direction of the influence of the features. While the ![bar plot summary](https://github.com/coryncates/Project-Revisited/blob/main/bar.png?raw=true) highlighted the impactful features, the ![dot plot summary](https://github.com/coryncates/Project-Revisited/blob/main/bar.png?raw=true) allowed us to visualize the intricate details of each feature's influence on individual predictions, with each dot representing a Shapley value for a feature and an instance.
 
 #### **Interpretation of SHAP values:**
 - The bar plot indicates the average magnitude of SHAP values per feature, reflecting the impact of features on the model output. In this model, ‘Item_MRP’, ‘Outlet_Type’, and ‘Item_Visibility’ predominantly influence the predictions.
