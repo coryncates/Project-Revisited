@@ -70,8 +70,8 @@ Two individual examples were selected for detailed visualization and interpretat
 - Other features have similar interpretations, contributing to lower sales predictions in this instance.
 
 #### SHAP Force Plot:
-![low](https://github.com/coryncates/Project-Revisited/blob/main/low.png?raw=true)
-![high](https://github.com/coryncates/Project-Revisited/blob/main/high.png?raw=true)
+![low](https://github.com/coryncates/Project-Revisited/blob/main/lower.png?raw=true)
+![high](https://github.com/coryncates/Project-Revisited/blob/main/higher.png?raw=true)
 
 #### Interpretation of SHAP Force Plot:
 - The absence of red features implies that all the influential features are leading to a decrease in the predicted sales for this instance.
@@ -88,7 +88,8 @@ Two individual examples were selected for detailed visualization and interpretat
 - Other features have similar interpretations, contributing to higher sales predictions in this instance.
 
 #### SHAP Force Plot:
-[Include SHAP Force Plot or Refer to the Corresponding Section/Plot in the Document]
+![low](https://github.com/coryncates/Project-Revisited/blob/main/lower.png?raw=true)
+![high](https://github.com/coryncates/Project-Revisited/blob/main/higher.png?raw=true)
 
 #### Interpretation of SHAP Force Plot:
 - Features related to not being a Grocery Store, having a higher Item MRP, and being identified as OUT027 are major factors contributing to higher sales predictions in this instance.
