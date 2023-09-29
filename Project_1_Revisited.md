@@ -54,6 +54,48 @@ SHAP unveiled not just the magnitude but also the direction of the influence of 
 #### **Conclusion:**
 While both Random Forest and SHAP analyses have their unique strengths in interpreting model decisions, a synergistic approach leveraging both methods can offer richer, more nuanced insights, enhancing our understanding of model intricacies and aiding in the development of more robust, informed models.
 
+## Local Explanation
+
+### Rationale for Selection of Individual Examples:
+Two individual examples were selected for detailed visualization and interpretation: one with the lowest sales and one with the highest sales. These instances were chosen to understand the model's behavior at the extremes and to identify the features that influence the model’s predictions the most in such scenarios.
+
+### Example 1: Instance with Lowest Sales
+
+#### Lime Tabular Explanation:
+[Include Lime Tabular Explanation or Refer to the Corresponding Section/Plot in the Document]
+
+#### Interpretation of Lime Tabular Explanation:
+- **Feature: Outlet_Type_Grocery Store > 0.00 (Blue Contribution):** Implies that being a Grocery Store greatly decreases the sales prediction.
+- **Feature: Item_MRP <= 92.70 (Blue Contribution):** Items with an MRP of 92.70 or less are associated with a decrease in the sales prediction.
+- Other features have similar interpretations, contributing to lower sales predictions in this instance.
+
+#### SHAP Force Plot:
+![low](https://github.com/coryncates/Project-Revisited/blob/main/low.png?raw=true)
+![high](https://github.com/coryncates/Project-Revisited/blob/main/high.png?raw=true)
+
+#### Interpretation of SHAP Force Plot:
+- The absence of red features implies that all the influential features are leading to a decrease in the predicted sales for this instance.
+- The significant negative prediction might be reflective of the overall trend in the dataset or model bias.
+
+### Example 2: Instance with Highest Sales
+
+#### Lime Tabular Explanation:
+![lime](https://github.com/coryncates/Project-Revisited/blob/main/lime.png?raw=true)
+
+#### Interpretation of Lime Tabular Explanation:
+- **Feature: Outlet_Type_Grocery Store <= 0.00 (Orange Contribution):** Being not a Grocery Store greatly increases the sales prediction.
+- **Feature: Item_MRP > 183.99 (Orange Contribution):** Items with an MRP above 183.99 are associated with an increase in the sales prediction.
+- Other features have similar interpretations, contributing to higher sales predictions in this instance.
+
+#### SHAP Force Plot:
+[Include SHAP Force Plot or Refer to the Corresponding Section/Plot in the Document]
+
+#### Interpretation of SHAP Force Plot:
+- Features related to not being a Grocery Store, having a higher Item MRP, and being identified as OUT027 are major factors contributing to higher sales predictions in this instance.
+
+### Summary:
+These local interpretations provide insights into how the model is making predictions for specific instances and help in validating the model's decisions against domain knowledge and logical reasoning.
+
 
 ## Note
 For detailed insights and accurate interpretations, please refer to the actual results and outputs in the [Project 1 Revisited Notebook](Project_1_Revisited.ipynb).
